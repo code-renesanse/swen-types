@@ -1,0 +1,15 @@
+{
+  "name": "swen-types",
+  "version": "1.0.0",
+  "description": "TypeScript types used throughout SWEN libraries.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "code.renesanse",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
