@@ -1,5 +1,9 @@
 import { API } from "./api";
 
+export interface ConfigurationComponentMap {
+    [key: string]: (parent: Component, api: API) => void;
+} 
+
 export interface Component {
     api: API;
     id: string;
@@ -9,6 +13,7 @@ export interface Component {
     dockElement: HTMLElement;
     title: HTMLElement;
     dockItem: HTMLElement;
+    configurationComponentsMap: ConfigurationComponentMap;
     enable: () => void;
     disable: () => void;
     addSubElement: (button: HTMLElement | Element) => void;
