@@ -1,4 +1,4 @@
-export default interface ModelElement {
+export interface ModelElement {
     instanceID: string;
     name?: string;
 }
