@@ -1,6 +1,6 @@
 {
   "name": "swen-types",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "TypeScript types used throughout SWEN libraries.",
   "main": "./index.js",
   "types": "./index.d.ts",
