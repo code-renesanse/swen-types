@@ -1,15 +1,25 @@
 {
   "name": "swen-types",
-  "version": "1.0.3",
+  "version": "1.0.10",
   "description": "TypeScript types used throughout SWEN libraries.",
-  "main": "./dist/index.js",
-  "scripts": {
-    "build": "tsc"
-  },
-  "keywords": [],
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "author": "code.renesanse",
   "license": "MIT",
+  "keywords": [
+    "ts",
+    "swen",
+    "types"
+  ],
+  "scripts": {
+    "build": "tsc && cp ./package.json ./dist/package.json"
+  },
+  "engines": {"node": ">=10.0.0"},
   "devDependencies": {
     "typescript": "^4.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-renesanse/swen-types"
   }
 }
