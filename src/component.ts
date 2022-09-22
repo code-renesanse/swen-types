@@ -9,11 +9,11 @@ export interface Component {
     dockElement: HTMLElement;
     title: HTMLElement;
     dockItem: HTMLElement;
-    enable: () => {};
-    disable: () => {};
-    addSubElement: (button: HTMLElement | Element) => {};
-    addSubElements: (buttonList: HTMLElement[] | Element[]) => {};
+    enable: () => void;
+    disable: () => void;
+    addSubElement: (button: HTMLElement | Element) => void;
+    addSubElements: (buttonList: HTMLElement[] | Element[]) => void;
     getComponentName: () => string;
-    customLangUpdate: (api: API) => {};
-    updateLang: (api: API) => {}; 
+    customLangUpdate: (api: API) => void;
+    updateLang: (api: API) => void; 
 }
