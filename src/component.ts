@@ -9,7 +9,7 @@ export interface Component {
     id: string;
     name: string; 
     // this.translation;
-    subElements: HTMLElement;
+    subelements: HTMLElement;
     dockElement: HTMLElement;
     title: HTMLElement;
     dockItem: HTMLElement;
