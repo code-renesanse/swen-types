@@ -1,7 +1,11 @@
-import { Component } from "./component.model";
+import { ComponentClass } from "./component.model";
 import { Dictionary } from "./dictionary.model";
 import { SketchfabModelElement } from "./element.model";
 import { Language, Translation } from "./language.model";
+
+export interface ConfigurationComponentMap {
+    [key: string]: (parent: ComponentClass, api: API) => void;
+}
 
 export interface API {
     imageDictionary: Dictionary<string>;
@@ -10,7 +14,8 @@ export interface API {
     animationSpeed: number;
     languages: Language;
     TRANSLATOR: Translation;
-    COMPONENTS: Component[];
+    COMPONENTS: ComponentClass[];
+    configurationComponentsMap: ConfigurationComponentMap;
     show: (id: string) => void;
     hide: (id: string) => void;
 }
