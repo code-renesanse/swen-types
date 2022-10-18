@@ -8,6 +8,7 @@ export interface ConfigurationComponentMap {
 }
 
 export interface API {
+    currentModelId: string;
     imageDictionary: Dictionary<string>;
     componentDictionary: Dictionary<SketchfabModelElement>;
     modelsList: string[];
@@ -16,6 +17,7 @@ export interface API {
     TRANSLATOR: Translation;
     COMPONENTS: ComponentClass[];
     configurationComponentsMap: ConfigurationComponentMap;
+    getters: object;
     show: (id: string) => void;
     hide: (id: string) => void;
 }
